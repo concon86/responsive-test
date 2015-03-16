@@ -1,24 +1,21 @@
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .page-wrap {
-  width: 800px;
-  margin: 20px auto;
-}
+  max-width: 800px;
+  margin: 20px auto; }
 
 .main-story {
   position: relative;
-  margin: 0 0 25px 0;
-}
+  margin: 0 0 25px 0; }
 
 img {
   display: block;
-}
+  width: 100%;
+  height: auto; }
 
 a {
-  color: lightblue;
-}
+  color: lightblue; }
 
 .story-intro {
   position: absolute;
@@ -27,36 +24,62 @@ a {
   width: 100%;
   background: rgba(0, 0, 0, 0.75);
   padding: 20px;
-  color: white;
-}
+  color: white; }
 
 h1 {
-   font-size: 4em;
-}
-h1, h2 {
-  margin: 0 0 10px 0;
-}
+  font-size: 4em;
+  margin: 0 0 10px 0; }
+
+h2 {
+  margin: 0 0 10px 0; }
 
 .story-intro h1 {
-  font-size: 2.5em;
-}
+  font-size: 2.5em; }
 .story-intro p {
-  margin: 0;
-}
+  margin: 0; }
 
 .sub-stories {
   overflow: hidden;
-  margin: 0 0 25px 0;
-}
+  margin: 0 0 25px 0; }
 
 .sub-story {
   float: left;
-  width: 250px;
-  margin-right: 25px;
+  width: 30%;
+  margin-right: 5%;
   position: relative;
-  font-size: 80%;
-}
+  font-size: 80%; }
 
 .last {
-  margin-right: 0;
+  margin-right: 0; }
+
+@media all and (max-width: 700px) {
+  .story-intro {
+      padding: 4%;
+   } 
+  .sub-story {
+    float: none;
+    margin-right: 0px;
+    position: relative;
+    font-size: 80%;
+    margin:5px auto;
+    width: auto;
+    max-width: 250px;
+  }
+
+  .sub-story img{
+    width: auto;
+    height: auto;
+    margin:5px auto;
+  }
+
+  .story-intro h1{
+  font-size: 1em; 
+ }
+
+   .story-intro p{
+  font-size: .9em; 
+ }
+
+
+
 }
